@@ -1,0 +1,22 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 63,
+      "subject": "Mathematics",
+      "trend": "flat"
+    }
+  ],
+  "profile": {
+    "board": "ICSE",
+    "daily_study_time_minutes": 90,
+    "grade": 10,
+    "name": "Vivaan Iyer",
+    "strong_topics": [],
+    "student_id": "SYN-07",
+    "target_exam": "Boards",
+    "weak_topics": [
+      "Grammar Tenses"
+    ]
+  },
+  "tests": []
+}

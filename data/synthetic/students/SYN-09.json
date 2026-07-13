@@ -1,0 +1,24 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 60,
+      "subject": "Mathematics",
+      "trend": "flat"
+    }
+  ],
+  "profile": {
+    "board": "State",
+    "daily_study_time_minutes": 40,
+    "grade": 8,
+    "name": "Reyansh Pillai",
+    "strong_topics": [
+      "Integers"
+    ],
+    "student_id": "SYN-09",
+    "target_exam": "Annual",
+    "weak_topics": [
+      "Fractions"
+    ]
+  },
+  "tests": []
+}

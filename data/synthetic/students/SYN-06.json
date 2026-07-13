@@ -1,0 +1,29 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 0,
+      "subject": "Mathematics",
+      "trend": "down"
+    },
+    {
+      "overall_score_percentage": 100,
+      "subject": "Science",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 50,
+    "grade": 7,
+    "name": "Diya Menon",
+    "strong_topics": [
+      "Integers"
+    ],
+    "student_id": "SYN-06",
+    "target_exam": "Term 2",
+    "weak_topics": [
+      "Decimals"
+    ]
+  },
+  "tests": []
+}

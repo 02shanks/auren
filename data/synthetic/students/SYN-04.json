@@ -1,0 +1,41 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 38,
+      "subject": "Mathematics",
+      "trend": "down"
+    },
+    {
+      "overall_score_percentage": 41,
+      "subject": "Science",
+      "trend": "down"
+    }
+  ],
+  "profile": {
+    "board": "State",
+    "daily_study_time_minutes": 30,
+    "grade": 9,
+    "name": "Rohit Verma",
+    "strong_topics": [],
+    "student_id": "SYN-04",
+    "target_exam": "Board Prelims",
+    "weak_topics": [
+      "Algebra",
+      "Fractions",
+      "Grammar Tenses",
+      "Photosynthesis"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-07-18",
+      "subject": "Mathematics",
+      "test_id": "T303",
+      "test_name": "Remedial Test",
+      "topics": [
+        "Algebra",
+        "Fractions"
+      ]
+    }
+  ]
+}

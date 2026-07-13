@@ -1,0 +1,37 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 72,
+      "subject": "Mathematics",
+      "trend": "flat"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 150,
+    "grade": 11,
+    "name": "Kabir Shah",
+    "strong_topics": [
+      "Trigonometry",
+      "Linear Equations"
+    ],
+    "student_id": "SYN-05",
+    "target_exam": "JEE",
+    "weak_topics": [
+      "Trigonometry",
+      "Calculus Basics"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-09-01",
+      "subject": "Mathematics",
+      "test_id": "T304",
+      "test_name": "JEE Mock 3",
+      "topics": [
+        "Trigonometry",
+        "Calculus Basics"
+      ]
+    }
+  ]
+}

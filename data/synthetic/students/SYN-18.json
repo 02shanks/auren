@@ -1,0 +1,24 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 99,
+      "subject": "Mathematics",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 150,
+    "grade": 11,
+    "name": "Kabir Shah (DUPLICATE RECORD)",
+    "strong_topics": [
+      "Trigonometry"
+    ],
+    "student_id": "SYN-05",
+    "target_exam": "JEE",
+    "weak_topics": [
+      "Calculus Basics"
+    ]
+  },
+  "tests": []
+}

@@ -1,0 +1,102 @@
+{
+  "materials": [
+    {
+      "material_id": "M201",
+      "material_type": "notes",
+      "subject": "Mathematics",
+      "title": "Fractions Made Easy",
+      "topic": "Fractions"
+    },
+    {
+      "material_id": "M202",
+      "material_type": "video",
+      "subject": "Mathematics",
+      "title": "Integers Crash Course",
+      "topic": "Integers"
+    },
+    {
+      "material_id": "M203",
+      "material_type": "video",
+      "subject": "Science",
+      "title": "Photosynthesis Explained",
+      "topic": "Photosynthesis"
+    },
+    {
+      "material_id": "M204",
+      "material_type": "notes",
+      "subject": "Science",
+      "title": "Photosynthesis Explained (Revised)",
+      "topic": "Photosynthesis"
+    },
+    {
+      "material_id": "M205",
+      "material_type": "video",
+      "subject": "Science",
+      "title": "Mitosis and Cell Division Walkthrough",
+      "topic": "Mitosis Cell Division"
+    },
+    {
+      "material_id": "M206",
+      "material_type": "notes",
+      "subject": "Mathematics",
+      "title": "Trigonometry Fundamentals",
+      "topic": "Trigonometry"
+    },
+    {
+      "material_id": "M207",
+      "material_type": "quiz",
+      "subject": "Mathematics",
+      "title": "Linear Equations Practice Set",
+      "topic": "Linear Equations"
+    },
+    {
+      "material_id": "M208",
+      "material_type": "notes",
+      "subject": "English",
+      "title": "English Tenses Handbook",
+      "topic": "Grammar Tenses"
+    },
+    {
+      "material_id": "M209",
+      "material_type": "notes",
+      "subject": "Social Science",
+      "title": "Indian History Timeline",
+      "topic": "Indian History"
+    },
+    {
+      "material_id": "M210",
+      "material_type": "video",
+      "subject": "Mathematics",
+      "title": "Algebra Foundations",
+      "topic": "Algebra"
+    },
+    {
+      "material_id": "M211",
+      "material_type": "notes",
+      "subject": "Mathematics",
+      "title": "Decimals and Place Value",
+      "topic": "Decimals"
+    },
+    {
+      "material_id": "M212",
+      "material_type": "video",
+      "subject": "Mathematics",
+      "title": "Intro to Calculus",
+      "topic": "Calculus Basics"
+    },
+    {
+      "material_id": "M213",
+      "material_type": "notes",
+      "subject": "English",
+      "title": "Essay Writing Structure Guide",
+      "topic": "Essay Structure"
+    },
+    {
+      "material_id": "M214",
+      "material_type": "notes",
+      "subject": "हिंदी",
+      "title": "प्रकाश का परावर्तन नोट्स",
+      "topic": "प्रकाश परावर्तन"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "materials": [
+    { "material_id": "M101", "topic": "Algebra", "title": "Algebra Basics Revision Notes" },
+    { "material_id": "M103", "topic": "Quadratic Equations", "title": "Quadratic Equations Concept Video" },
+    { "material_id": "M105", "topic": "Light - Reflection and Refraction", "title": "Ray Diagrams Explained" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 67,
+      "subject": "Mathematics",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "ICSE",
+    "daily_study_time_minutes": 80,
+    "grade": 10,
+    "name": "Aditya Joshi",
+    "strong_topics": [
+      "Linear Equations"
+    ],
+    "student_id": "SYN-11",
+    "target_exam": "Boards",
+    "weak_topics": [
+      "Fractions"
+    ]
+  },
+  "tests": [
+    {
+      "date": "next Tuesday",
+      "subject": "Mathematics",
+      "test_id": "T307",
+      "test_name": "Mystery Test",
+      "topics": [
+        "Fractions"
+      ]
+    }
+  ]
+}

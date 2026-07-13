@@ -1,0 +1,86 @@
+# Auren configuration — single source of runtime knobs.
+# pipeline.mode selects which of the three evaluated approaches is active (see README §15 and
+# PHASE1_REPORT.md / PHASE2_REPORT.md). The deterministic mode (and the deterministic fallback
+# within hybrid, if Ollama is unreachable) runs end-to-end with ZERO external services; hybrid
+# and llm need a reachable Ollama or OpenRouter backend.
+
+pipeline:
+  # The three evaluated approaches (select by config only; AUREN_MODE env overrides):
+  #   deterministic -> rule-based routing + template synthesis, no model calls
+  #   hybrid        -> deterministic safety-net routing + LLM tool selection union + LLM generation
+  #   llm           -> end-to-end LLM: native multi-round tool calling, LLM routing & generation
+  #                    (structural validation + grounding verification still apply)
+  mode: hybrid
+  llm:
+    max_tool_rounds: 4    # agentic loop budget per turn
+    history_turns: 5      # bounded session history included in the prompt
+    grounding: enforce    # enforce -> critique-regen then grounded fallback | report -> flag only
+
+llm:
+  # Orthogonal to pipeline.mode above — this only selects which LLM CLIENT deterministic/
+  # hybrid/llm modes use when a model is actually needed (pipeline.mode: deterministic never
+  # needs one). Don't confuse this block's "auto" with the old two-backend "auto" pipeline
+  # mode that pipeline.mode: hybrid replaced — they are different axes entirely.
+  # auto     -> use Ollama if reachable, otherwise the deterministic offline engine (logs a warning)
+  # ollama   -> require local Ollama (fails clearly if unreachable)
+  # openrouter -> cloud fallback (requires OPENROUTER_API_KEY), OpenAI-compatible
+  # deterministic -> force the offline rule-based engine (no model at all; invalid for pipeline.mode: llm)
+  backend: auto
+  ollama:
+    host: http://localhost:11434
+    chat_model: qwen3:8b          # verify tag with `ollama list`; 4b on constrained hardware
+    request_timeout_seconds: 120
+    # Deterministic sampling: keep LLM output reproducible near-zero temperature.
+    temperature: 0.0
+    top_p: 1.0
+    top_k: 1
+    repeat_penalty: 1.1
+    seed: 42
+    # qwen3 is a thinking model — `think: false` disables its non-deterministic reasoning pass.
+    think: false
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    chat_model: "qwen/qwen-2.5-7b-instruct:free"   # :free roster rotates — verify at build time
+    max_retries: 3
+    # Deterministic sampling (mirrors the Ollama block; seed support is provider-dependent).
+    temperature: 0.0
+    top_p: 1.0
+    seed: 42
+
+retrieval:
+  # embedder: auto -> Ollama nomic-embed-text if reachable, else deterministic hashing embedder
+  embedder: auto
+  ollama_embed_model: nomic-embed-text
+  hashing_dim: 512
+  # vector_store: auto -> ChromaDB if installed, else pure-python in-memory cosine store
+  vector_store: auto
+  chroma_path: vector_store
+  collection: study_materials
+  semantic_min_similarity: 0.60   # below this, recommend_study_material honestly returns "no match"
+  default_top_k: 3
+
+memory:
+  root: memory
+  session_backend: in_process     # in_process (default) | redis  (see DECISIONS D-08)
+  redis_url_env: REDIS_URL
+  top_k_mastery_in_context: 3     # only the top-K priority topics enter the prompt
+  persona_min_evidence: 2         # drift guard: traits used only with >=2 corroborating events
+
+context:
+  max_chars: 4800                 # hard budget for the assembled payload (~1200 tokens @ ~4 chars/tok)
+  approx_chars_per_token: 4
+  log_file: context_log.jsonl     # per-student; audit reads this
+
+mastery:
+  # weights — hand-tuned, documented in DECISIONS D-05
+  w_weakness: 0.40
+  w_test_urgency: 0.30
+  w_staleness: 0.20
+  w_positive_feedback: 0.20
+  test_urgency_near_days: 3       # <=3 days -> urgency 1.0
+  test_urgency_far_days: 21       # >=21 days / none -> urgency 0.0
+  staleness_full_days: 14         # staleness saturates to 1.0 after this many days unstudied
+  feedback_min_events_for_persona: 2
+
+logging:
+  level: INFO

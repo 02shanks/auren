@@ -1,0 +1,7 @@
+{
+  "student_id": "S123",
+  "subject_performance": [
+    { "subject": "Mathematics", "overall_score_percentage": 52 },
+    { "subject": "Science", "overall_score_percentage": 63 }
+  ]
+}

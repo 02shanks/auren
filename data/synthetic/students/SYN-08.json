@@ -1,0 +1,36 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 55,
+      "subject": "Mathematics",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 100,
+    "grade": 11,
+    "name": "Anaya Bose",
+    "strong_topics": [
+      "Algebra"
+    ],
+    "student_id": "SYN-08",
+    "target_exam": "JEE",
+    "weak_topics": [
+      "Probability",
+      "Statistics"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-08-05",
+      "subject": "Mathematics",
+      "test_id": "T305",
+      "test_name": "Stats Quiz",
+      "topics": [
+        "Probability",
+        "Statistics"
+      ]
+    }
+  ]
+}

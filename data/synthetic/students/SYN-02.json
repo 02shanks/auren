@@ -1,0 +1,46 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 66,
+      "subject": "English",
+      "trend": "flat"
+    },
+    {
+      "overall_score_percentage": 74,
+      "subject": "Social Science",
+      "trend": "up"
+    },
+    {
+      "overall_score_percentage": 80,
+      "subject": "Hindi",
+      "trend": "flat"
+    }
+  ],
+  "profile": {
+    "board": "IB",
+    "daily_study_time_minutes": 120,
+    "grade": 12,
+    "name": "Isha Rao",
+    "strong_topics": [
+      "Indian History"
+    ],
+    "student_id": "SYN-02",
+    "target_exam": "IB Finals",
+    "weak_topics": [
+      "Grammar Tenses",
+      "Essay Structure"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-07-20",
+      "subject": "English",
+      "test_id": "T302",
+      "test_name": "Language Paper 1",
+      "topics": [
+        "Grammar Tenses",
+        "Essay Structure"
+      ]
+    }
+  ]
+}

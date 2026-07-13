@@ -1,0 +1,32 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 59,
+      "subject": "Science",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "IB",
+    "daily_study_time_minutes": 130,
+    "grade": 12,
+    "name": "Zoya Ansari",
+    "strong_topics": [],
+    "student_id": "SYN-16",
+    "target_exam": "IB Finals",
+    "weak_topics": [
+      "Cell Division and Mitosis"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-07-25",
+      "subject": "Science",
+      "test_id": "T311",
+      "test_name": "Biology Paper 2",
+      "topics": [
+        "Cell Division and Mitosis"
+      ]
+    }
+  ]
+}

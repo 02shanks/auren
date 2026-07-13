@@ -1,0 +1,49 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 71,
+      "subject": "Science",
+      "trend": "flat"
+    },
+    {
+      "overall_score_percentage": 64,
+      "subject": "English",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 160,
+    "grade": 12,
+    "name": "Myra Reddy",
+    "strong_topics": [
+      "Photosynthesis"
+    ],
+    "student_id": "SYN-12",
+    "target_exam": "NEET",
+    "weak_topics": [
+      "Cell Division and Mitosis",
+      "Grammar Tenses"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-07-08",
+      "subject": "Science",
+      "test_id": "T308",
+      "test_name": "Bio Test",
+      "topics": [
+        "Cell Division and Mitosis"
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "subject": "English",
+      "test_id": "T309",
+      "test_name": "Grammar Test",
+      "topics": [
+        "Grammar Tenses"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 53,
+      "subject": "Mathematics",
+      "trend": "flat"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 110,
+    "grade": 11,
+    "name": "",
+    "strong_topics": [],
+    "student_id": "SYN-14",
+    "target_exam": "JEE",
+    "weak_topics": [
+      "Understanding and applying advanced multi-step problem solving strategies across arithmetic, algebra, geometry, trigonometry, statistics and probability in timed exam conditions while managing anxiety and showing all working clearly for full method marks",
+      "Algebra"
+    ]
+  },
+  "tests": []
+}

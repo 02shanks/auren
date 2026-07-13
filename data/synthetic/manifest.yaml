@@ -1,0 +1,20 @@
+seed: 42
+students:
+  SYN-01: baseline (CBSE grade 6)
+  SYN-02: subjects beyond math/science; IB; second language
+  SYN-03: zero weak topics
+  SYN-04: all weak, no strong
+  SYN-05: topic in both strong and weak (weak wins tie-break)
+  SYN-06: score boundaries 0% and 100%
+  SYN-07: subject in performance without topic detail; weak subject absent from perf
+  SYN-08: weak topics with zero materials (honest no-match)
+  SYN-09: no upcoming tests
+  SYN-10: past-dated test
+  SYN-11: malformed/unparseable test date
+  SYN-12: two tests in the same week
+  SYN-13: missing optional fields; null where a list is expected
+  SYN-14: empty name; 200+ character topic string
+  SYN-15: unicode / Devanagari content
+  SYN-16: reworded topic forcing semantic retrieval
+  SYN-17: clean happy-path with a future test overlapping a weak topic
+  SYN-18: duplicate student_id (collides with SYN-05) -> integrity error

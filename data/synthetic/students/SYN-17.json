@@ -1,0 +1,41 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 57,
+      "subject": "Mathematics",
+      "trend": "up"
+    },
+    {
+      "overall_score_percentage": 62,
+      "subject": "Social Science",
+      "trend": "flat"
+    }
+  ],
+  "profile": {
+    "board": "State",
+    "daily_study_time_minutes": 85,
+    "grade": 9,
+    "name": "Dev Malhotra",
+    "strong_topics": [
+      "Integers"
+    ],
+    "student_id": "SYN-17",
+    "target_exam": "Boards",
+    "weak_topics": [
+      "Algebra",
+      "Indian History"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-07-15",
+      "subject": "Mathematics",
+      "test_id": "T312",
+      "test_name": "Algebra Test",
+      "topics": [
+        "Algebra",
+        "Linear Equations"
+      ]
+    }
+  ]
+}

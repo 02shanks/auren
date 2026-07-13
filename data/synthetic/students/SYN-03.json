@@ -1,0 +1,23 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 91,
+      "subject": "Mathematics",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "ICSE",
+    "daily_study_time_minutes": 60,
+    "grade": 8,
+    "name": "Meera Nair",
+    "strong_topics": [
+      "Algebra",
+      "Photosynthesis"
+    ],
+    "student_id": "SYN-03",
+    "target_exam": "Half-Yearly",
+    "weak_topics": []
+  },
+  "tests": []
+}

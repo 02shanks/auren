@@ -1,0 +1,34 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 68,
+      "subject": "हिंदी",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "State",
+    "daily_study_time_minutes": 75,
+    "grade": 9,
+    "name": "अर्जुन शर्मा",
+    "strong_topics": [
+      "गणित"
+    ],
+    "student_id": "SYN-15",
+    "target_exam": "बोर्ड परीक्षा",
+    "weak_topics": [
+      "प्रकाश का परावर्तन"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-08-15",
+      "subject": "हिंदी",
+      "test_id": "T310",
+      "test_name": "इकाई परीक्षा",
+      "topics": [
+        "प्रकाश का परावर्तन"
+      ]
+    }
+  ]
+}

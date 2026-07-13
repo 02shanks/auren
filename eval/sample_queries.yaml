@@ -1,0 +1,33 @@
+# The four canonical lifecycle queries from blueprint sec 3.2, traced against S123.
+# Note: run date is 2026-07-05, so S123's only test (T201, 2026-04-14) is in the past and
+# is correctly filtered — query 4 exercises the past-date path (sec 9 row 10) by design.
+today: "2026-07-05"
+dataset: all
+cases:
+  - id: q1_weakness_focus
+    student: S123
+    query: "I am weak in Algebra, what should I study next?"
+    expect_intent: [weakness_focus]
+    expect_tools_include: [get_weak_topics, recommend_study_material]
+    expect_answer_contains: ["Algebra", "M101"]
+
+  - id: q2_study_plan
+    student: S123
+    query: "What should I study this week?"
+    expect_intent: [study_plan]
+    expect_tools_include: [get_weak_topics, get_upcoming_tests, get_performance_summary, recommend_study_material]
+    expect_answer_contains: ["priority"]
+
+  - id: q3_prioritize
+    student: S123
+    query: "Which topic should I prioritize first?"
+    expect_intent: [prioritize]
+    expect_tools_include: [get_weak_topics, recommend_study_material]
+    expect_answer_contains: ["Algebra"]
+
+  - id: q4_test_prep
+    student: S123
+    query: "I have a Maths test coming up, help me prepare"
+    expect_intent: [test_prep]
+    expect_tools_include: [get_upcoming_tests, get_weak_topics]
+    expect_answer_contains: ["T201", "past"]

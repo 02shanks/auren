@@ -1,0 +1,32 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 49,
+      "subject": "Mathematics",
+      "trend": "down"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 70,
+    "grade": 9,
+    "name": "Sara Khan",
+    "strong_topics": [],
+    "student_id": "SYN-10",
+    "target_exam": "Boards",
+    "weak_topics": [
+      "Algebra"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-03-01",
+      "subject": "Mathematics",
+      "test_id": "T306",
+      "test_name": "Past Midterm",
+      "topics": [
+        "Algebra"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "performance": [
+    {
+      "overall_score_percentage": 64,
+      "subject": "Mathematics",
+      "trend": "up"
+    },
+    {
+      "overall_score_percentage": 70,
+      "subject": "Science",
+      "trend": "up"
+    }
+  ],
+  "profile": {
+    "board": "CBSE",
+    "daily_study_time_minutes": 45,
+    "grade": 6,
+    "name": "Aarav Gupta",
+    "strong_topics": [
+      "Integers"
+    ],
+    "student_id": "SYN-01",
+    "target_exam": "Term 1",
+    "weak_topics": [
+      "Fractions",
+      "Decimals"
+    ]
+  },
+  "tests": [
+    {
+      "date": "2026-08-10",
+      "subject": "Mathematics",
+      "test_id": "T301",
+      "test_name": "Unit Test 1",
+      "topics": [
+        "Fractions",
+        "Integers"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Environments
+.venv/
+venv/
+# Caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+# Secrets
+.env
+# Generated / machine-specific
+vector_store/*
+!vector_store/.gitkeep
+memory/*
+!memory/.gitkeep
+*.log
+#docs
+PHASE1_REPORT.md
+PHASE2_REPORT.md

@@ -1,0 +1,38 @@
+# Golden expectations for the behavioral stages that sample/adversarial don't cover:
+# grounding and self-improvement (blueprint sec 7.4, sec 14).
+today: "2026-07-05"
+dataset: all
+
+# Grounding: these must produce a grounded answer (grounding_ok True) with no fallback needed
+# on the deterministic engine.
+grounding:
+  - id: g_plan_grounded
+    student: SYN-04
+    query: "what should I study this week?"
+  - id: g_testprep_grounded
+    student: SYN-17
+    query: "I have a maths test coming up, help me prepare"
+  - id: g_perf_grounded
+    student: SYN-02
+    query: "how am I doing?"
+
+# Self-improvement: for each student, capture the top-ranked topic, log 'helped' feedback on it,
+# and require its priority to strictly decrease (feedback measurably changes the ranking).
+self_improvement:
+  - id: si_s123
+    student: S123
+    focus_topic: Algebra
+  - id: si_syn04
+    student: SYN-04
+    focus_topic: Algebra
+  - id: si_syn17
+    student: SYN-17
+    focus_topic: Algebra
+
+# Persona drift guard: a single positive feedback must NOT set a preferred material type;
+# two corroborating positives on the same material type must.
+persona:
+  - id: persona_two_events
+    student: SYN-01
+    material_id: M202          # a 'video' material
+    topic: Integers
