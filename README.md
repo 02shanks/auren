@@ -1,4 +1,4 @@
-# Auren — an experimental study assistant, evaluating three pipeline approaches
+# Auren — Study Assistant
 
 Auren is a command-line study assistant. You give it one student's profile, performance,
 materials, and upcoming tests; it answers natural-language questions ("what should I study
